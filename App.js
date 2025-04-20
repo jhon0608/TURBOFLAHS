@@ -1,14 +1,14 @@
 import React from 'react';
 import { NavigationContainer } from '@react-navigation/native';
-import { ThemeProvider } from './context/ThemeContext';
 import AppNavigator from './navigation/AppNavigator';
+import { AuthProvider } from './context/AuthContext';
 
 export default function App() {
   return (
-    <ThemeProvider>
+    <AuthProvider>
       <NavigationContainer>
         <AppNavigator />
       </NavigationContainer>
-    </ThemeProvider>
+    </AuthProvider>
   );
 }
